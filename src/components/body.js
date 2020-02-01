@@ -5,6 +5,9 @@
 import React from 'react'
 
 // components
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
 
 // =============================
@@ -24,12 +27,12 @@ class Body extends React.Component{
   // ==============
 render(){
   return(
-    <body>
-      <header className="header">
-      Banner and Info
-      </header>
-      <div className="content">
-        <div className="carousel">
+    <Grid container spacing={3}>
+      <Grid item xs={12} className="header">
+        Banner and Info
+      </Grid>
+        <Grid item xs={6} className="carousel">
+        <Paper>
         Image Carousel This is where some images goes
         <br />
         <img
@@ -37,16 +40,16 @@ render(){
         alt="compendium"
         >
         </img>
-        </div>
+        </Paper>
+        </Grid>
 
-        <div className="text">
+        <Grid item xs={6} className="text">
         Description This is where some text about stuff goes
-        </div>
-      </div>
-      <footer className="footer">
+        </Grid>
+      <Grid item xs={12} className="footer">
       Footer Here
-      </footer>
-    </body>
+      </Grid>
+    </Grid>
   )
 
 
