@@ -5,11 +5,13 @@
 import React from 'react'
 
 // components
+import Image from 'react-bootstrap/Image'
 // import { makeStyles } from '@material-ui/core/styles';
 // import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Carousel from 'react-bootstrap/Carousel'
-
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 // =============================
 // COMPONENT CLASS
 // =============================
@@ -29,39 +31,79 @@ render(){
   return(
     <Grid container spacing={3}>
       <Grid item xs={12} className="header">
-        Banner and Info
+        <h1>Jordan Morales</h1>
+        <h3>Software Engineer</h3>
       </Grid>
         <Grid item xs={8} className="carousel">
 
 
         <Carousel>
           <Carousel.Item>
-            <img
-            src="https://res.cloudinary.com/htc0pkenr/image/upload/c_scale,w_471/v1578445797/kcw5rjnz29awou0chama.png"
+            <Card >
+            <Card.Img
+            src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580646711/portfolio/d4ymvvkioxl9rvsea5zo.png"
             alt="compendium"
+            fluid
             />
-            <Carousel.Caption>
-            Image Carousel This is where some images goes
-            <a href="https://complete-compendium.herokuapp.com/" alt="link to compendium project"><ion-icon name="link" size="large"></ion-icon>
+            <Card.Body>
+            <Card.Title>
+              Complete-Compendium
+            </Card.Title>
+            <Card.Text>
+              This project was my final project during my General Assembly program. I really enjoyed making this and playing with the stylization to make it really give that tabletop RPG feel.
+            </Card.Text>
+              <Button variant="primary" href="https://complete-compendium.herokuapp.com/" alt="link to compendium project">view this project</Button>
+            </Card.Body>
+            </Card>
+            <br />
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <a href="https://jordan-morales.github.io/pokedex-plus/" alt="link to pokedex project">
+            <Image
+            src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580645476/portfolio/zwzy3thoqbnsyfvekpnn.png"
+            alt="pokedex"
+            fluid
+            />
             </a>
+            <Carousel.Caption>
+            Infos about pokedex
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-            src="https://res.cloudinary.com/htc0pkenr/image/upload/c_scale,w_471/v1578445797/kcw5rjnz29awou0chama.png"
-            alt="compendium"
+            <a href="SpaceX" alt="link to SpaceX project">
+            <Image
+            src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580645477/portfolio/aaakijkanyuj9lmosolf.png"
+            alt="SpaceX"
+            fluid
             />
+            </a>
             <Carousel.Caption>
-            Image Carousel This is where some images goes
+            SpaceX
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-            src="https://res.cloudinary.com/htc0pkenr/image/upload/c_scale,w_471/v1578445797/kcw5rjnz29awou0chama.png"
-            alt="compendium"
+            <a href="tealicious" alt="link to tealicious project">
+            <Image
+            src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580645477/portfolio/kgetozqxgvvnlzwzqhib.png"
+            alt="tealicious"
+            fluid
             />
+            </a>
             <Carousel.Caption>
-            Image Carousel This is where some images goes
+            tealicious
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <a href="betterboxd" alt="link to betterboxd project">
+            <Image
+            src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580645476/portfolio/gcpej0kb79dhvlgjhgqj.png"
+            alt="betterboxd"
+            fluid
+            />
+            </a>
+            <Carousel.Caption>
+            betterboxd
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -70,10 +112,14 @@ render(){
         </Grid>
 
         <Grid item xs={4} className="text">
-        Description This is where some text about stuff goes
+
+        <h4>Click a project to see the live site</h4>
+
+        <h2>Jordan Morales</h2>
+
         </Grid>
       <Grid item xs={12} className="footer">
-      Footer Here
+      Social Icons
       </Grid>
     </Grid>
   )
