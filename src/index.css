@@ -23,11 +23,10 @@ body {
   display: flex;
   flex-direction: row;
   align-content: space-between;
-  /* flex: 1 0 auto; */
 }
 
 .carousel {
-  width: 60%;
+  width: 100%;
 }
 
 .text {
@@ -39,5 +38,5 @@ body {
 }
 
 img {
-  width: auto; 
+  width: auto;
 }
