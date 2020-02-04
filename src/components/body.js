@@ -34,7 +34,10 @@ render(){
         <h1>Jordan Morales</h1>
         <h3>Software Engineer</h3>
       </Grid>
-        <Grid item xs={8} className="carousel">
+      <Grid item xs={12} className="footer">
+      Social Icons
+      </Grid>
+        <Grid item xs={6} className="carousel">
 
 
         <Carousel>
@@ -111,16 +114,13 @@ render(){
 
         </Grid>
 
-        <Grid item xs={4} className="text">
+        <Grid item xs={6} className="text">
 
         <h4>Click a project to see the live site</h4>
 
         <h2>Jordan Morales</h2>
 
         </Grid>
-      <Grid item xs={12} className="footer">
-      Social Icons
-      </Grid>
     </Grid>
   )
 
