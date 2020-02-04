@@ -116,9 +116,12 @@ render(){
 
         <Grid item xs={6} className="text">
 
-        <h4>Click a project to see the live site</h4>
-
         <h2>Jordan Morales</h2>
+
+        <section>
+        I am a software engineer who is a technoid, highly cognizant, life-long learner. I enjoy making sure everyone on my team is armed with the knowledge they will need to succeed. When I’m not busy learning, you can find me relaxing to some anime or listening to Lights and Janelle Monae.
+
+        </section>
 
         </Grid>
     </Grid>
