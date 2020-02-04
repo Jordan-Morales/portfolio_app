@@ -5,7 +5,7 @@
 import React from 'react'
 
 // components
-import Image from 'react-bootstrap/Image'
+// import Image from 'react-bootstrap/Image'
 // import { makeStyles } from '@material-ui/core/styles';
 // import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -37,7 +37,8 @@ render(){
       <Grid item xs={12} className="footer">
       Social Icons
       </Grid>
-        <Grid item xs={6} className="carousel">
+        <Grid item xs={2} lg={1}></Grid>
+        <Grid item xs={8} lg={5} className="carousel">
 
 
         <Carousel>
@@ -62,68 +63,102 @@ render(){
           </Carousel.Item>
 
           <Carousel.Item>
-            <a href="https://jordan-morales.github.io/pokedex-plus/" alt="link to pokedex project">
-            <Image
+            <Card >
+            <Card.Img
             src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580645476/portfolio/zwzy3thoqbnsyfvekpnn.png"
             alt="pokedex"
             fluid
             />
-            </a>
-            <Carousel.Caption>
+            <Card.Body>
+            <Card.Title>
+              Pokedex
+            </Card.Title>
+            <Card.Text>
             Infos about pokedex
-            </Carousel.Caption>
+            </Card.Text>
+            <Button variant="primary" href="https://jordan-morales.github.io/pokedex-plus/" alt="link to pokedex project">view this project</Button>
+            </Card.Body>
+            </Card>
+            <br />
           </Carousel.Item>
+
           <Carousel.Item>
-            <a href="SpaceX" alt="link to SpaceX project">
-            <Image
+          <Card >
+            <Card.Img
             src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580645477/portfolio/aaakijkanyuj9lmosolf.png"
             alt="SpaceX"
             fluid
             />
-            </a>
-            <Carousel.Caption>
+            <Card.Body>
+            <Card.Title>
             SpaceX
-            </Carousel.Caption>
+            </Card.Title>
+            <Card.Text>
+            Infos about spacex
+            </Card.Text>
+            <Button variant="primary" href="spacex" alt="link to spacex project">view this project</Button>
+            </Card.Body>
+            </Card>
+            <br />
           </Carousel.Item>
+
+
           <Carousel.Item>
-            <a href="tealicious" alt="link to tealicious project">
-            <Image
+            <Card >
+            <Card.Img
             src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580645477/portfolio/kgetozqxgvvnlzwzqhib.png"
             alt="tealicious"
             fluid
             />
-            </a>
-            <Carousel.Caption>
+            <Card.Body>
+            <Card.Title>
             tealicious
-            </Carousel.Caption>
+            </Card.Title>
+            <Card.Text>
+            Infos about tealicious
+            </Card.Text>
+            <Button variant="primary" href="" alt="link to tealicious project">view this project</Button>
+            </Card.Body>
+            </Card>
+            <br />
           </Carousel.Item>
+
+
           <Carousel.Item>
-            <a href="betterboxd" alt="link to betterboxd project">
-            <Image
+            <Card >
+            <Card.Img
             src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580645476/portfolio/gcpej0kb79dhvlgjhgqj.png"
             alt="betterboxd"
             fluid
             />
-            </a>
-            <Carousel.Caption>
-            betterboxd
-            </Carousel.Caption>
+            <Card.Body>
+            <Card.Title>
+              Betterboxd
+            </Card.Title>
+            <Card.Text>
+            Infos about betterboxd
+            </Card.Text>
+            <Button variant="primary" href="" alt="link to betterboxd project">view this project</Button>
+            </Card.Body>
+            </Card>
+            <br />
           </Carousel.Item>
         </Carousel>
-
-
         </Grid>
+        <Grid item xs={2} lg={1}></Grid>
+        <Grid item xs={2} lg={1}></Grid>
+        <Grid item xs={8} lg={2}>
+        <div className="text">
 
-        <Grid item xs={6} className="text">
-
-        <h2>Jordan Morales</h2>
+        <h2>Who am I?</h2>
 
         <section>
         I am a software engineer who is a technoid, highly cognizant, life-long learner. I enjoy making sure everyone on my team is armed with the knowledge they will need to succeed. When I’m not busy learning, you can find me relaxing to some anime or listening to Lights and Janelle Monae.
 
         </section>
-
+        </div>
         </Grid>
+        <Grid item xs={2} lg={1}></Grid>
     </Grid>
   )
 
