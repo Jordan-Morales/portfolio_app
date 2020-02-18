@@ -22,10 +22,13 @@ body {
 
 }
 
-.header, .footer, .carousel, .text {
+.carousel, .text {
   background-color: white;
 }
-
+.footer, .header {
+  background-color: blue;
+  color: white;
+}
 .content {
 
   height: 60%;

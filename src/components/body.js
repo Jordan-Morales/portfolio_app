@@ -147,7 +147,7 @@ render(){
         </Grid>
         <Grid item xs={2} lg={1}></Grid>
         <Grid item xs={2} lg={1}></Grid>
-        <Grid item xs={8} lg={2}>
+        <Grid item xs={8} lg={3}>
         <div className="text">
 
         <h2>Who am I?</h2>
