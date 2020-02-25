@@ -35,7 +35,9 @@ render(){
         <h3>Software Engineer</h3>
       </Grid>
       <Grid item xs={12} className="footer">
-      Social Icons
+      Connect with me:<br/>
+      <a  href="https://github.com/Jordan-Morales/" ><ion-icon class="ion-icon" name="logo-github"></ion-icon></a>
+      <a href="https://www.linkedin.com/in/jordanmorales/"><ion-icon class="ion-icon" name="logo-linkedin"></ion-icon></a>
       </Grid>
         <Grid item xs={2} lg={1}></Grid>
         <Grid item xs={8} lg={5} className="carousel">
