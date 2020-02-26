@@ -3,8 +3,6 @@ body {
   height: 100%;
 }
 
-
-
 body {
   background-image: url(https://res.cloudinary.com/htc0pkenr/image/upload/v1580831254/portfolio/yyssnwof3lx1yaaief9a.jpg);
   background-size: cover;
@@ -16,6 +14,19 @@ body {
   flex-direction: column;
   align-content: space-between;
   margin: 0;
+  font-family: 'Open Sans';
+}
+
+h1, h2, h3, .footer {
+  font-family: 'Chewy';
+}
+
+.footer {
+  font-size: 1.2em;
+}
+
+.card-title {
+  font-family: 'Chewy';
 }
 
 .ion-icon {
@@ -34,7 +45,7 @@ body {
 
 }
 .footer, .header {
-  background-color: blue;
+  background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0, 0, 255, 1));
   color: white;
 }
 .content {
@@ -61,4 +72,8 @@ body {
 
 img {
   width: auto;
+}
+
+.name {
+  font-size: 3em;
 }

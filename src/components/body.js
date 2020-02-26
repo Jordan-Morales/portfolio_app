@@ -31,10 +31,9 @@ render(){
   return(
     <Grid container spacing={3}>
       <Grid item xs={12} className="header">
-        <h1>Jordan Morales</h1>
+        <h1 className="name">Jordan Morales</h1>
         <h3>Software Engineer</h3>
-      </Grid>
-      <Grid item xs={12} className="footer">
+
       Connect with me:<br/>
       <a  href="https://github.com/Jordan-Morales/" ><ion-icon class="ion-icon" name="logo-github"></ion-icon></a>
       <a href="https://www.linkedin.com/in/jordanmorales/"><ion-icon class="ion-icon" name="logo-linkedin"></ion-icon></a>
