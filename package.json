@@ -1,5 +1,6 @@
 {
   "name": "portfoli_app",
+  "homepage": "https://jordan-morales.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
