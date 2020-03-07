@@ -37,6 +37,8 @@ render(){
       Connect with me:<br/>
       <a  href="https://github.com/Jordan-Morales/" ><ion-icon class="ion-icon" name="logo-github"></ion-icon></a>
       <a href="https://www.linkedin.com/in/jordanmorales/"><ion-icon class="ion-icon" name="logo-linkedin"></ion-icon></a>
+      Email <br />
+      Resume Link <br />
       </Grid>
         <Grid item xs={2} lg={1}></Grid>
         <Grid item xs={8} lg={5} className="carousel">
