@@ -84,10 +84,11 @@ img {
 .arrow {
   font-size: 50px;
   color: white;
+  margin-top: 8em;
 }
 
-.verticalCenter {
+/* .verticalCenter {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */

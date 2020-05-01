@@ -82,7 +82,7 @@ render(){
         <ion-icon class="ion-icon" name="document">Resume</ion-icon></a>
 
       </Grid>
-        <Grid item xs={2} lg={1} class="verticalCenter">
+        <Grid item xs={2} lg={1}>
           <ion-icon name="arrow-back" className="left carousel-control" class="arrow" onClick={() => this.toggleCarousel('prev')}></ion-icon>
         </Grid>
         <Grid item xs={8} lg={5} className="carousel">
@@ -96,7 +96,6 @@ render(){
             <Card.Img
             src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580646711/portfolio/d4ymvvkioxl9rvsea5zo.png"
             alt="compendium"
-            fluid
             />
             <Card.Body>
             <Card.Title>
@@ -116,7 +115,6 @@ render(){
             <Card.Img
             src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580645476/portfolio/zwzy3thoqbnsyfvekpnn.png"
             alt="pokedex"
-            fluid
             />
             <Card.Body>
             <Card.Title>
@@ -136,7 +134,6 @@ render(){
             <Card.Img
             src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580645477/portfolio/aaakijkanyuj9lmosolf.png"
             alt="SpaceX"
-            fluid
             />
             <Card.Body>
             <Card.Title>
@@ -157,7 +154,6 @@ render(){
             <Card.Img
             src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580645477/portfolio/kgetozqxgvvnlzwzqhib.png"
             alt="tealicious"
-            fluid
             />
             <Card.Body>
             <Card.Title>
@@ -178,7 +174,6 @@ render(){
             <Card.Img
             src="https://res.cloudinary.com/htc0pkenr/image/upload/v1580645476/portfolio/gcpej0kb79dhvlgjhgqj.png"
             alt="betterboxd"
-            fluid
             />
             <Card.Body>
             <Card.Title>
@@ -194,7 +189,7 @@ render(){
           </Carousel.Item>
         </Carousel>
         </Grid>
-        <Grid item xs={2} lg={1} class="verticalCenter">
+        <Grid item xs={2} lg={1}>
         <ion-icon name="arrow-forward" className="right carousel-control" class="arrow" onClick={() => this.toggleCarousel('next')}></ion-icon>
         </Grid>
         <Grid item xs={2} lg={1}></Grid>
