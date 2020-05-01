@@ -105,7 +105,7 @@ render(){
             <Card.Text>
               This project was my final project during my General Assembly program. I really enjoyed making this and playing with the stylization to make it really give that tabletop RPG feel.
             </Card.Text>
-              <Button variant="primary" href="https://complete-compendium.herokuapp.com/" alt="link to compendium project">View This Project</Button>
+              <Button variant="primary" href="https://complete-compendium.herokuapp.com/" alt="link to compendium project" target="_blank" rel="noopener noreferrer">View This Project</Button>
             </Card.Body>
             </Card>
             <br />
@@ -125,7 +125,7 @@ render(){
             <Card.Text>
             My first project using an external API and responsive design. I chose to work with the PokéAPI. The goal here was to mimic a true Pokédex feel, a digital device for viewing the pocket monsters in your world!
             </Card.Text>
-            <Button variant="primary" href="https://jordan-morales.github.io/pokedex-plus/" alt="link to pokedex project">View This Project</Button>
+            <Button variant="primary" href="https://jordan-morales.github.io/pokedex-plus/" alt="link to pokedex project" target="_blank" rel="noopener noreferrer">View This Project</Button>
             </Card.Body>
             </Card>
             <br />
@@ -145,7 +145,7 @@ render(){
             <Card.Text>
             This was another group project, our goal was to pull data from SpaceX API and allow you to view it in a meaningful way. The app allows you to view and save your favorite SpaceX launches and shows the mission badge for each.
             </Card.Text>
-            <Button variant="primary" href="spacex" alt="link to spacex project">View This Project</Button>
+            <Button variant="primary" href="spacex" alt="link to spacex project" target="_blank" rel="noopener noreferrer">View This Project</Button>
             </Card.Body>
             </Card>
             <br />
@@ -166,7 +166,7 @@ render(){
             <Card.Text>
             This is a full-stack app I developed to track your favorite teas and any additional comments about them. Each user can login and view their own set of tea's or a global list.
             </Card.Text>
-            <Button variant="primary" href="" alt="link to tealicious project">View This Project</Button>
+            <Button variant="primary" href="" alt="link to tealicious project" target="_blank" rel="noopener noreferrer">View This Project</Button>
             </Card.Body>
             </Card>
             <br />
@@ -187,7 +187,7 @@ render(){
             <Card.Text>
             Betterboxd was a group project I worked on. We wanted our site functionality to be available to both a logged in user and one who has yet to sign up. Additionally we worked on getting a functiong "like button" in the form of a filled heart, this was a really big challenge suprisingly for such a small element.
             </Card.Text>
-            <Button variant="primary" href="" alt="link to betterboxd project">View This Project</Button>
+            <Button variant="primary" href="" alt="link to betterboxd project" target="_blank" rel="noopener noreferrer">View This Project</Button>
             </Card.Body>
             </Card>
             <br />
