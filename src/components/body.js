@@ -19,11 +19,45 @@ class Body extends React.Component{
   // ==============
   // STATE
   // ==============
+    constructor (props) {
+    super(props)
+    this.state = {
+      index: 0,
+      direction: null,
+      carouselItemCount: 5
+    }
+  }
 
   // ==============
   // HANDLERS
   // ==============
+toggleCarousel = (direction) => {
+    let index = this.state.index
+    const [min, max] = [0, this.state.carouselItemCount - 1]
+    switch (direction) {
+      case 'next':
+        index++;
+        break;
+      case 'prev':
+        index--;
+        break;
+      default:
+    }
 
+    if (index > max) {
+      // at max, start from top
+      index = 0
+    }
+
+    if (index < min) {
+      // at min, start from max
+      index = max
+    }
+    this.setState({
+      direction,
+      index
+    })
+  }
   // ==============
   // RENDER
   // ==============
@@ -35,16 +69,28 @@ render(){
         <h3>Software Engineer</h3>
 
       Connect with me:<br/>
-      <a  href="https://github.com/Jordan-Morales/" ><ion-icon class="ion-icon" name="logo-github"></ion-icon></a>
-      <a href="https://www.linkedin.com/in/jordanmorales/"><ion-icon class="ion-icon" name="logo-linkedin"></ion-icon></a>
-      Email <br />
-      Resume Link <br />
+      <a href="https://github.com/Jordan-Morales/" target="_blank" rel="noopener noreferrer">
+        <ion-icon class="ion-icon" name="logo-github"></ion-icon></a>
+
+      <a href="https://www.linkedin.com/in/jordanmorales/"  target="_blank" rel="noopener noreferrer">
+        <ion-icon class="ion-icon" name="logo-linkedin"></ion-icon></a>
+
+      <a href="mailto:jordan.morales@gmail.com?Subject=Connect">
+        <ion-icon class="ion-icon" name="mail"></ion-icon></a>
+
+      <a href="resumev4.pdf" target="_blank" rel="noopener noreferrer">
+        <ion-icon class="ion-icon" name="document">Resume</ion-icon></a>
+
       </Grid>
-        <Grid item xs={2} lg={1}></Grid>
+        <Grid item xs={2} lg={1} class="verticalCenter">
+          <ion-icon name="arrow-back" className="left carousel-control" class="arrow" onClick={() => this.toggleCarousel('prev')}></ion-icon>
+        </Grid>
         <Grid item xs={8} lg={5} className="carousel">
-
-
-        <Carousel>
+        <Carousel
+          id="carousel"
+          indicators={false}
+          controls={false}
+          activeIndex={this.state.index} direction={this.state.direction}>
           <Carousel.Item>
             <Card >
             <Card.Img
@@ -148,7 +194,9 @@ render(){
           </Carousel.Item>
         </Carousel>
         </Grid>
-        <Grid item xs={2} lg={1}></Grid>
+        <Grid item xs={2} lg={1} class="verticalCenter">
+        <ion-icon name="arrow-forward" className="right carousel-control" class="arrow" onClick={() => this.toggleCarousel('next')}></ion-icon>
+        </Grid>
         <Grid item xs={2} lg={1}></Grid>
         <Grid item xs={8} lg={3}>
         <div className="text">
@@ -164,8 +212,6 @@ render(){
         <Grid item xs={2} lg={1}></Grid>
     </Grid>
   )
-
-
 }
 }
 
